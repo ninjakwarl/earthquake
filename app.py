@@ -212,7 +212,7 @@ def create_footer():
     github = html.A(
         children=html.I(children=[], className='fa fa-github fa-3x'),
         title='Repo on GitHub',
-        href='https://github.com/jackdbd/dash-earthquakes', target='_blank')
+        href='https://github.com/ninjakwarl/earthquake-monitor', target='_blank')
 
     li_right_first = {'line-style-type': 'none', 'display': 'inline-block'}
     li_right_others = {k: v for k, v in li_right_first.items()}
