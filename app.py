@@ -40,7 +40,7 @@ except KeyError:
     dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
     load_dotenv(dotenv_path)
 
-py.sign_in(os.environ['PLOTLY_USERNAME'], os.environ['PLOTLY_API_KEY'])
+py.sign_in(os.environ['ninjakwarl'], os.environ['eRJ9Vr5UEIEBoFjO5KpD'])
 
 usgs = 'http://earthquake.usgs.gov/earthquakes/'
 geoJsonFeed = 'feed/v1.0/summary/4.5_month.geojson'
@@ -52,7 +52,7 @@ data = json.loads(req.text)
 # with open('4.5_month.geojson') as data_file:
 #     data = json.load(data_file)
 
-mapbox_access_token = os.environ.get('MAPBOX_ACCESS_TOKEN', 'mapbox-token')
+mapbox_access_token = os.environ.get('pk.eyJ1IjoibmluamFrd2FybCIsImEiOiJjazJuMHdkcTMwYXowM21xbnl0M3BrMXJzIn0.isVtPJcUVb8ma_-7yX-oPQ', 'mapbox-token')
 
 # http://colorbrewer2.org/#type=sequential&scheme=YlOrRd&n=5
 colorscale_magnitude = [
